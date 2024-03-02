@@ -1,0 +1,100 @@
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+h2 {
+    text-align: center;
+}
+* {
+    background-color: cadetblue;
+}
+nav {
+    border-bottom: 1px solid whitesmoke;
+    
+  }
+
+  .navigation ol {
+    list-style-type: none;
+    padding-left: 0;
+    color: beige;
+  }
+  
+  .nav {
+    display: inline-block;
+    
+  }
+  
+  .nav a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+    color: whitesmoke;
+  }  
+
+.weather-info {
+    text-align: center;
+}
+
+.weather-label {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.weather-info {
+    margin: 20px auto;
+    max-width: 1700px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.weather-item {
+    margin-bottom: 20px;
+}
+
+.weather-label {
+    font-weight: bold;
+}
+
+.weather-values {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.weather-values div {
+    width: calc(50% - 5px); /* Two items per row */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Style for each weather value */
+.weather-values div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Random colors for weather values */
+.weather-values div:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.weather-values div:nth-child(even) {
+    background-color: #eaeaea;
+}

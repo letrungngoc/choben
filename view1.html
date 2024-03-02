@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View 3 - Wind Speed Statistics</title>
+    <!-- Include your CSS stylesheets here -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Wind Speed Statistics</h1>
+    <div>
+        <nav class="navigation">
+            <ol>
+                <li id="temperature" class="nav"><a href="index.html">Temperature</a></li>
+                <li id="precipitation" class="nav"><a href="view2.html">Relative Humidity</a></li>
+                <li id="wind_speed" class="nav"><a href="view3.html">Wind Speed</a></li>
+              </ol>
+        </nav>
+        <div id="wind-speed" class="weather-info">
+            <div class="weather-item">
+                <div class="weather-label">Wind Speed: (km/h) </div>
+                <div class="weather-values" id="wind-speed-values">
+                    <!-- Wind speed data will be displayed here -->
+                </div>
+                <div class="weather-chart">
+                    <canvas id="wind-speed-chart" width="400" height="200"></canvas>
+                </div>
+    <table>
+        <tr>
+            <th>Statistical Measure</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Mean</td>
+            <td id="mean-wind-speed"></td>
+        </tr>
+        <tr>
+            <td>Median</td>
+            <td id="median-wind-speed"></td>
+        </tr>
+        <tr>
+            <td>Mode</td>
+            <td id="mode-wind-speed"></td>
+        </tr>
+        <tr>
+            <td>Range</td>
+            <td id="range-wind-speed"></td>
+        </tr>
+        <tr>
+            <td>Standard Deviation</td>
+            <td id="std-dev-wind-speed"></td>
+        </tr>
+        <tr>
+            <td>Min</td>
+            <td id="min-wind-speed"></td>
+        </tr>
+        <tr>
+            <td>Max</td>
+            <td id="max-wind-speed"></td>
+        </tr>
+    </table>
+    <!-- Other HTML content goes here -->
+    <script src="main.js"></script>
+</body>
+</html>

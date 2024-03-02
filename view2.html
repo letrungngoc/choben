@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Humidity</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>HISTORICAL WEATHER</h1>
+    <h2>HISTORICAL Relative Humidity</h2>
+    <div>
+        <nav class="navigation">
+            <ol>
+                <li id="temperature" class="nav"><a href="index.html">Temperature</a></li>
+                <li id="humidity" class="nav"><a href="view2.html">Relative Humidity</a></li>
+                <li id="wind_speed" class="nav"><a href="view3.html">Wind Speed</a></li>
+              </ol>
+        </nav>
+        <div id="humidity" class="weather-info">
+            <div class="weather-item">
+                <div class="weather-label">Relative Humidity: (%)</div>
+                <div class="weather-values" id="humidity-values">
+                    <!-- Precipitation data will be displayed here -->
+                </div>
+                <div class="weather-chart">
+                    <canvas id="humidity-chart" width="400" height="200"></canvas>
+                </div>
+                
+                <div class="weather-statistics" id="humidity-statistics">
+                    <!-- Statistical information will be displayed here -->
+                    <p><strong>Statistical Information:</strong></p>
+                    <p>Mean: <span id="mean-humidity"></span></p>
+                    <p>Median: <span id="median-humidity"></span></p>
+                    <p>Mode: <span id="mode-humidity"></span></p>
+                    <p>Range: <span id="range-humidity"></span></p>
+                    <p>Standard Deviation: <span id="std-dev-humidity"></span></p>
+                    <p>Min: <span id="min-humidity"></span></p>
+                    <p>Max: <span id="max-humidity"></span></p>
+                </div>
+
+                <div>
+                    <select class="timespan-selector" data-parameter="relative_humidity_2m" data-element-id="humidity-values">
+                        <option value="now">Now</option>
+                        <option value="24_hours">Last 24 hours</option>
+                        <option value="48_hours">Last 48 hours</option>
+                        <option value="72_hours">Last 72 hours</option>
+                        <option value="1_week">Last 1 week</option>
+                        <option value="1_month">Last 1 month</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./statistics.js"></script>
+    <!-- <script type="module" src="script.js"></script> -->
+    <!-- <script type="module" src="main.js"></script> -->
+    <script type="module" src="test.js"></script>
+</body>
+</html>
