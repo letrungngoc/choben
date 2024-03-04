@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>HISTORICAL WEATHER</h1>
-    <h2>HISTORICAL WIND SPEED</h2>
+    <!-- <h2>HISTORICAL WIND SPEED</h2> -->
     <div>
         <nav class="navigation">
             <ol>
@@ -20,16 +20,17 @@
         </nav>
         <div id="wind-speed" class="weather-info">
             <div class="weather-item">
-                <div class="weather-label">Wind Speed: (km/h) </div>
+                <div class="weather-label"><p>Wind Speed (km/h)</p> </div>
                 <div class="weather-values" id="wind-speed-values">
                     <!-- Wind speed data will be displayed here -->
                 </div>
                 <div class="weather-chart">
+                    <p>Chart Information</p>
                     <canvas id="wind-speed-chart" width="400" height="200"></canvas>
                 </div>
                 <div class="weather-statistics" id="wind-speed-statistics">
                     
-                    <p><strong>Statistical Information:</strong></p>
+                    <p class="sta" style="font-size: xx-large"><strong>Statistical Information</strong></p>
                     <p>Mean: <span id="mean-wind-speed"></span></p>
                     <p>Median: <span id="median-wind-speed"></span></p>
                     <p>Mode: <span id="mode-wind-speed"></span></p>
@@ -54,8 +55,8 @@
     </div>
 
     <script src="./statistics.js"></script>
-    <!-- <script type="module" src="script.js"></script> -->
+    <script type="module" src="script.js"></script>
     <!-- <script type="module" src="main.js"></script> -->
-    <script type="module" src="test.js"></script>
+    <!-- <script type="module" src="test.js"></script> -->
 </body>
 </html>
