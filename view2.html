@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>HISTORICAL WEATHER</h1>
-    <h2>HISTORICAL Relative Humidity</h2>
+    <!-- <h2>HISTORICAL Relative Humidity</h2> -->
     <div>
         <nav class="navigation">
             <ol>
@@ -20,17 +20,18 @@
         </nav>
         <div id="humidity" class="weather-info">
             <div class="weather-item">
-                <div class="weather-label">Relative Humidity: (%)</div>
+                <div class="weather-label"><p>Relative Humidity (%)</p></div>
                 <div class="weather-values" id="humidity-values">
                     <!-- Precipitation data will be displayed here -->
                 </div>
                 <div class="weather-chart">
-                    <canvas id="humidity-chart" width="400" height="200"></canvas>
+                    <p>Chart Information</p>
+                    <canvas id="humidity-chart" width="300" height="100"></canvas>
                 </div>
                 
                 <div class="weather-statistics" id="humidity-statistics">
                     <!-- Statistical information will be displayed here -->
-                    <p><strong>Statistical Information:</strong></p>
+                    <p class="sta" style="font-size: xx-large"><strong>Statistical Information</strong></p>
                     <p>Mean: <span id="mean-humidity"></span></p>
                     <p>Median: <span id="median-humidity"></span></p>
                     <p>Mode: <span id="mode-humidity"></span></p>
@@ -56,8 +57,8 @@
     </div>
 
     <script src="./statistics.js"></script>
-    <!-- <script type="module" src="script.js"></script> -->
+    <script type="module" src="script.js"></script>
     <!-- <script type="module" src="main.js"></script> -->
-    <script type="module" src="test.js"></script>
+    <!-- <script type="module" src="test.js"></script> -->
 </body>
 </html>
