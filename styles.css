@@ -1,28 +1,30 @@
 h1 {
     text-align: center;
     color: aliceblue;
+    text-shadow: 2px 2px black;
+    font-size: 400%;
 }
 
-h2 {
-    text-align: center;
-}
 * {
-    background-color: cadetblue;
+    background-color: rgb(88, 194, 243);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 nav {
-    border-bottom: 1px solid whitesmoke;
-    
+    border-bottom: 3px solid whitesmoke;
   }
 
   .navigation ol {
     list-style-type: none;
-    padding-left: 0;
+    padding-left: 5;
     color: beige;
+    text-shadow: 0.5px 0.5px rgb(249, 249, 249);
   }
   
   .nav {
     display: inline-block;
-    
+    font-size: x-large;
+    color: #0ae5e5;
   }
   
   .nav a::after {
@@ -37,64 +39,87 @@ nav {
 
 .weather-info {
     text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 5px;
+    border: 10px solid #fefdfd;
+    border-radius: 40px;
 }
 
 .weather-label {
     font-size: xx-large;
     font-weight: 700;
+    font-weight: bold;
+    text-shadow: 2px 2px whitesmoke;
+    
 }
 
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
+} */
 
-h1, h2 {
-    text-align: center;
-}
-
-.weather-info {
+/* .weather-info {
     margin: 20px auto;
     max-width: 1700px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-}
+} */
 
-.weather-item {
-    margin-bottom: 20px;
-}
+/* .weather-item {
+    margin-bottom: 2px;
+} */
 
-.weather-label {
+.weather-chart {
     font-weight: bold;
+    font-size: xx-large;
+    text-shadow: 2px 2px whitesmoke;
+
 }
 
 .weather-values {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
+    font-size: 30px;
+    align-items: center;
+      
 }
 
-.weather-values div {
-    width: calc(50% - 5px); /* Two items per row */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
+ .weather-values div {
+    width: calc(6% - 20px); 
+    padding: 16px;
+    border: 4px solid rgba(27, 125, 171, 0.772);
+    border-radius: 50px;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+}  
 
 /* Style for each weather value */
-.weather-values div {
+/* .weather-values div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 /* Random colors for weather values */
 .weather-values div:nth-child(odd) {
-    background-color: #f2f2f2;
+    background-color: #fdfdfd;
 }
 
 .weather-values div:nth-child(even) {
-    background-color: #eaeaea;
+    background-color: #eaeaead0;
+}
+
+.weather-statistics p{
+    font-size: larger;
+    text-shadow: 0.5px 0.5px rgba(245, 245, 245, 0.738);
+    font-weight: 600;
+}
+
+.weather-statistics .sta {
+    text-shadow: 2px 2px whitesmoke;
 }
