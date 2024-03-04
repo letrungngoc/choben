@@ -73,9 +73,9 @@ document.addEventListener('DOMContentLoaded', function() {
           {
             label: "Relative Humidity (%)",
             data: data,
-            backgroundColor: "rgb(54, 162, 255)",
-            borderColor: "rgb(54, 162, 255)",
-            borderWidth: 1,
+            backgroundColor: "rgba(245, 245, 245, 0.2)",
+            borderColor: "rgba(245, 245, 245, 1)",
+            borderWidth: 4,
           },
         ],
       },
@@ -104,8 +104,8 @@ document.addEventListener('DOMContentLoaded', function() {
           {
             label: "Wind Speed (km/h)",
             data: data,
-            backgroundColor: "rgba(255, 99, 132, 0.2)",
-            borderColor: "rgba(255, 99, 132, 1)",
+            backgroundColor: "rgba(200, 200, 200, 0.2)",
+            borderColor: "rgba(200, 200, 200, 1)",
             borderWidth: 4,
           },
         ],
